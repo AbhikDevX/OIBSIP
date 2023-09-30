@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&family=Ubuntu:ital@1&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    /* height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column; */
+    /* min-height: 100vh; */
+    background-color: #94d2bd;
+
+}
+.navbar{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 30px 0;
+    color: #001219;
+    background-color: #ff006e;
+
+}
+.navbar.logo.h1{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: black;
+}
+.navbar .logo b{
+color: blueviolet;
+}
+.navbar ul{
+    display: flex;
+    cursor: pointer;
+    list-style: none;
+}
+.navbar ul li{
+    margin-right: 30px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.navbar ul .active::after{
+    content:'';
+    width: 50%;
+    height: 3px;
+    background-color: olive;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+button{
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#signin{
+    background: transparent;
+    border: none;
+}
+#signup{
+    background: linear-gradient(#540bc9, #810b7d);
+    color: azure;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* To vertically align the content */
+  }
+.content{
+    display: flex;
+    gap:30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.left{
+    display: block;
+    width: 100%;
+
+}
+.info{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.info h2{
+    font-family: sans-serif;
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+#button1{
+    background: linear-gradient(#540bc9, #810b7d);
+    color: azure;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.info p{
+    font-family: 'Varela Round';
+}
+.right{
+    display: block;
+    width: 100%;
+}
+.right img{
+    width: 400px;
+    height: auto;
+    position: relative;
+    animation: rotate 10s linear infinite;
+     display: flex;
+    justify-content: right;
+   
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.category{
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.listItem{
+    width: 90%;
+    position: relative;
+    margin-top: 100px;
+}
+.listItem p{
+    font-size: 20px;
+    font-weight:600;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+}
+.clist{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card{
+  
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    background: #edafb8;
+    outline: 2px solid #003566;
+}
+.card img{
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+}
+.food-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.description{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price span{
+    font-weight: 600;
+    font-family: fantasy;
+}
+::-webkit-scrollbar{
+    width: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: #9c6644;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer h2 {
+    color: #ff5722;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ff5722;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
