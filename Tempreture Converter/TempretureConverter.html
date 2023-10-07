@@ -1,1 +1,28 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempconverter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="conatiner">
+    <div class="tempconv">
+        <h2>
+            Temperature Converter</h2>
+        <label for="Temperature">Enter Temperature</label>
+        <input type="number" id="Temperature" placeholder="Enter Temperature"/>
+        <label for="units">Select Units</label>
+        <select id="units">
+<option value="Celsius">Celsius</option>
+<option value="Fahrenheit">Fahrenheit</option>
+<option value="Kelvin">Kelvin</option>
+        </select>
+        <button id="btn">convert <img src="temperature-low-svgrepo-com.png" alt="imag"></button>
+        <div id="result"></div>
+    </div>
+   </div>
+    <script src="script.js"></script> 
+</body>
+</html>
